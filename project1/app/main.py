@@ -57,3 +57,10 @@ async def delete_item(item_id: str):
     return {"message": "Item deleted successfully"}
 
 
+@app.post("/read_file")
+async def read_file():
+    with open("/ValidationStudioDocker/project1/mount_file_dir_1/file_1", "r") as file1, \
+            open("/ValidationStudioDocker/project1/mount_file_dir_2/file_2", "r") as file2:
+        return {"file_1": file1.read(), "file_2": file2.read()}
+    # with open("file_demo", "r") as f:
+    #     return {"f": f.read()}
