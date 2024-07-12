@@ -56,7 +56,6 @@ async def delete_item(item_id: str):
     collection.delete_one({"_id": ObjectId(item_id)})
     return {"message": "Item deleted successfully"}
 
-
 @app.post("/read_file")
 async def read_file():
     with open("/ValidationStudioDocker/project1/mount_file_dir_1/file_1", "r") as file1, \
@@ -64,3 +63,4 @@ async def read_file():
         return {"file_1": file1.read(), "file_2": file2.read()}
     # with open("file_demo", "r") as f:
     #     return {"f": f.read()}
+
