@@ -1,7 +1,7 @@
 FROM tiangolo/uvicorn-gunicorn:python3.11-slim AS builder
 
-LABEL "Project"="Validation Studio"
-LABEL "Organisation"="ANORA"
+LABEL "Project"="Project"
+LABEL "Author"="Nashith"
 
 # Set the working directory
 WORKDIR /app/ValidationStudioCloud
