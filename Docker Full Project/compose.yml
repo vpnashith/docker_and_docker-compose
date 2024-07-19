@@ -10,7 +10,7 @@ services:
       - '9000:8000'
     volumes:
     # The driver_path and data_transfrom_path should be absolute path starting from ValidartionStudioCloud)
-      - /root/validation_studio_cloud/ValidationStudioCloud/${DRIVER_PATH}:/app/ValidationStudioCloud/${DRIVER_PATH}
-      - /root/validation_studio_cloud/ValidationStudioCloud/${DATA_TRANSFORM_PATH}:/app/ValidationStudioCloud${DATA_TRANSFORM_PATH}
+      - /root/validation_studio_cloud/Project/${DRIVER_PATH}:/app/Project/${DRIVER_PATH}
+      - /root/validation_studio_cloud/Project/${DATA_TRANSFORM_PATH}:/app/Project${DATA_TRANSFORM_PATH}
 
     restart: "no"

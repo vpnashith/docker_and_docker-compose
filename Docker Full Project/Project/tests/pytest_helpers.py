@@ -1,14 +1,4 @@
-"""
-    Module: pytest_helpers
-    Author: Rahul George
 
-    Description:
-
-    License:
-
-    Created on: 14-07-2022
-
-"""
 
 # pylint: disable = W0613, E0401
 import pytest

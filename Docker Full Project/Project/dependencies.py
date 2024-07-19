@@ -1,21 +1,11 @@
-"""
-    Module: dependencies.py
-    Author: Rahul George
 
-    Description:
-
-    License:
-
-    Created on: 13-06-2024
-
-"""
 
 from fastapi import FastAPI, Request, status
 from fastapi.exceptions import HTTPException
 from pymongo import MongoClient
 from pymongo.database import Database
 
-from ValidationStudioCloud.settings import settings
+from Project.settings import settings
 
 # settings = Settings()
 

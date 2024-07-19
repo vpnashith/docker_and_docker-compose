@@ -17,4 +17,4 @@ RUN pip install poetry && \
     poetry install --no-interaction --no-ansi
 
 # Copy the FastAPI project files
-COPY ./ValidationStudioCloud /app/ValidationStudioCloud/
+COPY Project /app/ValidationStudioCloud/

@@ -1,14 +1,4 @@
-"""
-    Module: settings.py
-    Author: Rahul George, Neethukrishnan
 
-    Description:
-
-    License:
-
-    Created on: 12-07-2024
-
-"""
 
 import os
 

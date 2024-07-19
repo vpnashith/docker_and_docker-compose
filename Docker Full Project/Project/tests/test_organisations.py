@@ -1,24 +1,15 @@
-"""
-    Module: test_organisations
-    Author: Sweeda Noronha
 
-    Description: Pytest for testing organisations endpoints
 
-    License:
-
-    Created on: 08-07-2024
-
-"""
 
 import bson
 from bson import ObjectId
 
 from fastapi.encoders import jsonable_encoder
-from ValidationStudioCloud.db_creator.db_creator_main import main
-from ValidationStudioCloud.tests.pytest_helpers import (  # noqa: F401
+from Project.db_creator.db_creator_main import main
+from Project.tests.pytest_helpers import (  # noqa: F401
     fixture_client as client,
 )
-from ValidationStudioCloud.tests.pytest_helpers import generate_db_instance
+from Project.tests.pytest_helpers import generate_db_instance
 
 
 # pylint: disable=duplicate-code
