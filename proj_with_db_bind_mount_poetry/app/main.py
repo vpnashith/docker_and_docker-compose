@@ -4,7 +4,7 @@ from pymongo import MongoClient
 from bson import ObjectId
 from typing import Union
 
-mongo_uri = "mongodb+srv://doadmin:O85q437nRt9MSm26@vs-mongodb-001-c4099f9a.mongo.ondigitalocean.com/admin?tls=true&authSource=admin&replicaSet=vs-mongodb-001"  # Update for cloud-based deployment
+mongo_uri = "mongodb+srv://doadmin:<password>@vs-mongodb-001-c4099f9a.mongo.ondigitalocean.com/admin?tls=true&authSource=admin&replicaSet=vs-mongodb-001"  # Update for cloud-based deployment
 
 # Connect to MongoDB
 client = MongoClient(mongo_uri)
