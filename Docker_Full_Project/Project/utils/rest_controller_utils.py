@@ -1,14 +1,3 @@
-"""
-    Module: rest_controller_utils.py
-    Author: Rahul George
-
-    Description: Helper methods for CRUD on top level document and embedded documents
-
-    License:
-
-    Created on: 01-11-2023
-
-"""
 
 # pylint: disable=R0913
 
