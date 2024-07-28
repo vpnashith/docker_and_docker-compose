@@ -1,14 +1,4 @@
-"""
-    Module: bson_object_id.py
-    Author: Rahul George
 
-    Description: To support the ObjectId type of BSON structure
-
-    License:
-
-    Created on: 01-11-2023
-
-"""
 # pylint:disable=E0611, C0103, W0108, C0116
 from typing import Any, Union
 from typing_extensions import Annotated
