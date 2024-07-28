@@ -1,16 +1,3 @@
-"""
-    Module: utils.py
-    Author: Arya Aji
-
-    Description:
-
-    License:
-
-    Created on: 15-11-2023
-    FIXME: Not required
-
-"""
-
 from enum import Enum
 from typing import List
 from bson import ObjectId
@@ -125,58 +112,3 @@ def convert_object_id_to_str_id(list_of_dict):
     return list_of_dict
 
 
-class MotorStates(str, Enum):
-    """enum class to keep track of motor states"""
-
-    UNDEFINED = "NOT INITIALIZED"
-    INITIALIZED = "INITIALIZED"
-    SPEED_PROFILE_SET = "SPEED_PROFILE_SET"
-    IN_MOTION = "IN_MOTION"
-
-
-class HandlerStates(str, Enum):
-    """enum class to keep track of handler states"""
-
-    OFFLINE = ("OFFLINE",)
-    IDLE = ("IDLE",)
-    IN_TESTING = ("IN_TESTING",)
-    PAUSED = "PAUSED"
-    # INITIALIZED = "INITIALIZED"
-
-
-class WebSocketStates(str, Enum):
-    """enum class to keep track of websocket states"""
-
-    PICK_AND_PLACE = "PICK_AND_PLACE"
-    TEMPERATURE_SOAKING = "TEMPERATURE_SOAKING"
-    TESTING = "TESTING"
-    RETURNING_THE_PART = "RETURNING_THE_PART"
-    TESTING_NOT_STARTED = "TESTING_NOT_STARTED"
-    PAUSED = "PAUSED"
-    TEST_COMPLETED = "TEST_COMPLETED"
-    ERROR = "ERROR"
-
-
-class ConnectionManager:
-    """connection manager class for websocket communication"""
-
-    ALLOW_MULTI_CONNECTION = True
-
-    def __init__(self):
-        self.active_connections: List[WebSocket] = []
-
-    async def connect(self, websocket: WebSocket):
-        """connect"""
-        if not ConnectionManager.ALLOW_MULTI_CONNECTION and self.active_connections:
-            await websocket.close(
-                code=status.WS_1000_NORMAL_CLOSURE,
-                reason="Multiple connection is restricted",
-            )
-            raise RuntimeError("Multiple connection is restricted")
-        else:
-            await websocket.accept()
-            self.active_connections.append(websocket)
-
-    def disconnect(self, websocket: WebSocket):
-        """disconnect"""
-        self.active_connections.remove(websocket)
