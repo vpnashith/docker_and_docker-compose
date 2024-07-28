@@ -1,14 +1,3 @@
-"""
-    Module: rest_utils.py
-    Author: Rahul George
-
-    Description: Supporting Pydantic Models for search api
-
-    License:
-
-    Created on: 01-11-2023
-
-"""
 
 # pylint: disable=C0103
 # pylint: disable=E0611
