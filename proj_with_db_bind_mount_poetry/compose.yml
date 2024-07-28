@@ -10,6 +10,6 @@ services:
       - '9000:8000'
     volumes:
     # since we are bind mounting, we have to provide absolute path
-      - /root/nashith_practice_dokcer/docker_practice/6.proj_with_db_bind_mount_poetry/mount_file_dir_1:/ValidationStudioDocker/project1/mount_file_dir_1
-      - /root/nashith_practice_dokcer/docker_practice/6.proj_with_db_bind_mount_poetry/mount_file_dir_2:/ValidationStudioDocker/project1/mount_file_dir_2
+      - /root/nashith_practice_dokcer/docker_practice/6.proj_with_db_bind_mount_poetry/mount_file_dir_1:/project1/mount_file_dir_1
+      - /root/nashith_practice_dokcer/docker_practice/6.proj_with_db_bind_mount_poetry/mount_file_dir_2:/project1/mount_file_dir_2
     restart: "no"
