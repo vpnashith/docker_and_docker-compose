@@ -1,14 +1,3 @@
-"""
-    Module: mongo_helper.py
-    Author: Rahul George
-
-    Description:
-
-    License:
-
-    Created on: 28-07-2022
-
-"""
 import uuid
 from typing import Union, Dict, List, Optional, Any, Set
 
