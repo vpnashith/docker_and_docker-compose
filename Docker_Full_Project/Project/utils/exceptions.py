@@ -1,15 +1,3 @@
-"""
-    Module: tc_exceptions
-    Author: Rahul George
-
-    Description: Generic module encapsulating all the exceptions used in this project.
-
-    License:
-
-    Created on: 14-07-2022
-
-"""
-
 from enum import Enum
 from typing import Tuple
 
